@@ -616,3 +616,6 @@ footer{margin-top:clamp(40px,5vw,72px)}
 .dock .dk-b:hover{transform:scale(1.04)}
 @media(max-width:700px){.dock{left:12px;right:12px;bottom:12px;justify-content:space-between;padding:7px 7px 7px 16px}.dock small{display:none}.dock b{font-size:12.5px}}
 @media print{.dock{display:none}}
+/* v20 hero dot field */
+.hero{isolation:isolate}
+.hdots{position:absolute;inset:0;width:100%;height:100%;z-index:-1;pointer-events:none;-webkit-mask-image:radial-gradient(ellipse 90% 85% at 50% 45%,#000 55%,transparent 100%);mask-image:radial-gradient(ellipse 90% 85% at 50% 45%,#000 55%,transparent 100%)}
