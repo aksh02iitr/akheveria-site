@@ -596,3 +596,12 @@ footer{margin-top:clamp(40px,5vw,72px)}
 .v-ph{container-type:size}
 .v-ph .ph:not(.scr){height:auto!important;max-width:none!important;width:min(28cqw,calc(80cqh * var(--r,.46)))}
 @media(max-width:700px){.v-ph .ph:not(.scr){width:min(42cqw,calc(80cqh * var(--r,.46)))}}
+/* v18 phone thumbnails: fewer screens, tighter corners */
+.v-ph .ph:not(.scr){--w:min(28cqw,calc(80cqh * var(--r,.46)));width:var(--w);border-radius:calc(var(--w) * .09);box-shadow:0 24px 48px -22px rgba(0,0,0,.5),0 0 0 2px #111}
+@media(max-width:700px){.v-ph .ph:not(.scr){--w:min(42cqw,calc(80cqh * var(--r,.46)))}}
+.mimg.v-ph{gap:5%!important}
+.mimg.v-ph .ph:nth-child(n+4){display:none}
+.mimg.v-ph{align-items:flex-start!important;padding:19% 6% 0!important}
+.mimg.v-ph .ph:not(.scr),.mimg.v-ph .ph:nth-child(3){--w:27cqw;display:block;animation:none}
+.mimg.v-ph .ph:nth-child(3){margin-top:9cqh}
+.mimg.v-ph .ph:nth-child(n+4){display:none!important}
