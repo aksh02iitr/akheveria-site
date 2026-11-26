@@ -319,7 +319,7 @@ html{overflow-x:clip}
 .cs{scroll-margin-top:110px}
 .cs-h{display:flex;align-items:baseline;gap:16px;margin-bottom:26px;padding-top:22px;border-top:1px solid var(--line)}
 .cs-n{font-family:"Doto";font-weight:900;font-size:28px;color:var(--blue)}
-.body.lg{font-size:clamp(20px,2.2vw,28px);line-height:1.35;letter-spacing:-.02em;max-width:40ch}
+.body.xl{font-size:clamp(20px,2.2vw,28px);line-height:1.35;letter-spacing:-.02em;max-width:40ch}
 .sub3{font-size:12px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--mute);margin:0 0 14px}
 .sub3:not(:first-child){margin-top:34px}
 .insg{display:grid;grid-template-columns:repeat(auto-fit,minmax(15em,1fr));gap:14px}
@@ -553,3 +553,24 @@ footer{margin-top:clamp(40px,5vw,72px)}
 @media(min-width:900px){.work{gap:0!important}.work .case{margin-bottom:clamp(160px,34vh,360px)}.work .case:last-child{margin-bottom:0}}
 @media(min-width:900px){.work .case{position:relative!important;top:auto!important;box-shadow:none!important;margin-bottom:0!important}.work{gap:clamp(96px,10vw,150px)!important}}
 .work{gap:72px}
+/* v16: case-study mobile, stacking with gaps */
+@media(max-width:760px){
+  .pstep .cvis{height:auto!important;aspect-ratio:16/11}
+  .pstep .cvis.v-ph{aspect-ratio:auto;height:clamp(380px,110vw,520px)!important}
+  .pstep .cvis .br{width:94%}
+  .pstep .cvis.v-tall{aspect-ratio:auto;height:480px!important}
+  .pstep .cvis.v-img{aspect-ratio:auto;height:auto!important}.pstep .cvis.v-img img{height:auto}
+  .cs{padding-top:72px}
+  .cs-h{gap:12px}
+  .body.xl{font-size:20px}
+  .cnums{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .cmeta{gap:18px 16px}
+  .chead h1{font-size:clamp(56px,16vw,88px)}
+  .pt h4{font-size:22px}
+  .decs .dc,.ins,.pers{padding:22px}
+}
+@media(min-width:900px){
+  .work .case{position:sticky!important;top:calc(76px + var(--i)*18px)!important;box-shadow:0 -24px 60px -36px rgba(0,0,0,.28)!important}
+}
+.cta h2{line-height:.98;margin-bottom:clamp(24px,3vw,40px)!important;padding-bottom:.06em}
+.cta p{margin-bottom:28px}.cta .note{margin-top:16px}
