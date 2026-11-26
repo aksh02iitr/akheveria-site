@@ -591,3 +591,8 @@ footer{margin-top:clamp(40px,5vw,72px)}
 .v-web .bv.ws img{position:relative!important;inset:auto!important;height:auto!important}
 .pstep .cvis.v-img{height:auto!important;padding:clamp(12px,2vw,28px)}
 .pstep .cvis.v-img img{position:static!important;width:100%!important;height:auto!important;object-fit:contain}
+.ph img{object-position:top center}
+.ph{max-width:30%}
+.v-ph{container-type:size}
+.v-ph .ph:not(.scr){height:auto!important;max-width:none!important;width:min(28cqw,calc(80cqh * var(--r,.46)))}
+@media(max-width:700px){.v-ph .ph:not(.scr){width:min(42cqw,calc(80cqh * var(--r,.46)))}}
