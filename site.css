@@ -605,3 +605,14 @@ footer{margin-top:clamp(40px,5vw,72px)}
 .mimg.v-ph .ph:not(.scr),.mimg.v-ph .ph:nth-child(3){--w:27cqw;display:block;animation:none}
 .mimg.v-ph .ph:nth-child(3){margin-top:9cqh}
 .mimg.v-ph .ph:nth-child(n+4){display:none!important}
+/* v19 floating availability dock */
+.dock{position:fixed;right:clamp(16px,2.4vw,32px);bottom:clamp(16px,2.4vw,28px);z-index:60;display:flex;align-items:center;gap:14px;padding:8px 8px 8px 18px;background:#16130f;color:#f6f1e8;border-radius:999px;box-shadow:0 18px 40px -16px rgba(0,0,0,.5),0 0 0 1px rgba(255,255,255,.06);transform:translateY(140%);opacity:0;transition:transform .5s cubic-bezier(.2,.8,.2,1),opacity .4s;pointer-events:none}
+.dock.on{transform:none;opacity:1;pointer-events:auto}
+.dock .dk-t{display:flex;align-items:center;gap:10px;line-height:1.2}
+.dock .live{margin:0;flex:none}
+.dock b{display:block;font-size:13px;font-weight:600}
+.dock small{display:block;font-size:11.5px;opacity:.65;margin-top:2px}
+.dock .dk-b{background:var(--clay);color:#16130f;text-decoration:none;font-weight:600;font-size:13.5px;padding:11px 18px;border-radius:999px;white-space:nowrap;transition:transform .2s}
+.dock .dk-b:hover{transform:scale(1.04)}
+@media(max-width:700px){.dock{left:12px;right:12px;bottom:12px;justify-content:space-between;padding:7px 7px 7px 16px}.dock small{display:none}.dock b{font-size:12.5px}}
+@media print{.dock{display:none}}
