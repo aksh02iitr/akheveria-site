@@ -702,3 +702,7 @@ footer{margin-top:clamp(40px,5vw,72px)}
 .sa .sa-b li:nth-child(7){transition-delay:1.12s}.sa .sa-b li:nth-child(8){transition-delay:1.24s}.sa .sa-b li:nth-child(9){transition-delay:1.36s}
 @media(max-width:560px){.sa-b.s li{grid-template-columns:22px 76px 1fr;font-size:14px}}
 @media(min-width:901px){.sa-p.usual{position:sticky;top:100px}}
+/* v22 signature logo + hero breathing room */
+.brand{font-family:"Homemade Apple",cursive;font-weight:400!important;letter-spacing:0!important;text-transform:none!important;font-size:19px;line-height:1;padding-top:4px;white-space:nowrap}
+@media(max-width:560px){.brand{font-size:16px}}
+.hero{padding-top:clamp(84px,11vw,160px)!important}
