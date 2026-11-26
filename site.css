@@ -706,3 +706,7 @@ footer{margin-top:clamp(40px,5vw,72px)}
 .brand{font-family:"Homemade Apple",cursive;font-weight:400!important;letter-spacing:0!important;text-transform:none!important;font-size:19px;line-height:1;padding-top:4px;white-space:nowrap}
 @media(max-width:560px){.brand{font-size:16px}}
 .hero{padding-top:clamp(84px,11vw,160px)!important}
+/* v23 even hero rhythm + readable toggle label on phones */
+.hero .dot{margin-bottom:.34em!important}
+.hero .big+.big{margin-top:.04em}
+@media(max-width:700px){.tog b{font-size:.19em!important;letter-spacing:.05em!important;padding-right:1.55em!important}.hero .dot{margin-bottom:.4em!important}}
