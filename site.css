@@ -710,3 +710,8 @@ footer{margin-top:clamp(40px,5vw,72px)}
 .hero .dot{margin-bottom:.34em!important}
 .hero .big+.big{margin-top:.04em}
 @media(max-width:700px){.tog b{font-size:.19em!important;letter-spacing:.05em!important;padding-right:1.55em!important}.hero .dot{margin-bottom:.4em!important}}
+/* v24 FOREST brand: sage paper, deep green, brass */
+:root{--bg:light-dark(#eef0e7,#0f1512);--ink:light-dark(#142019,#e9ede4);--mute:light-dark(#5b665d,#9aa59c);--soft:light-dark(#e2e6d9,#18201b);--line:light-dark(#d3d9c8,#26302a);--card:light-dark(#f6f7f1,#141b17);--acc:light-dark(#24573c,#7fbf98);--clay:#d8b56e;--sage:#9fb79a;--slate:#7d988c;--sand:#e5d3a3;--blue:var(--acc)}
+.cap{background:conic-gradient(from var(--a,0deg),var(--acc),var(--sage),var(--slate),var(--sand),var(--acc))!important}
+.pers .av{background:linear-gradient(135deg,var(--acc),var(--sage))}
+.pers:nth-child(2) .av{background:linear-gradient(135deg,#b08a3e,var(--clay))}
